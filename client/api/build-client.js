@@ -6,8 +6,7 @@ export default ({ req }) => {
     // http://SERVICENAME.NAMESPACE.svc.cluster.local
     // the headers is to tell ingress-srv the host we want to access
     return axios.create({
-      baseURL:
-        'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local',
+      baseURL: 'http://www.testing-some-multi-k8s.pw/',
       headers: req.headers
     });
   } else {
